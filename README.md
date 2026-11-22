@@ -1,5 +1,5 @@
 <div align="center">
-  <h2>RetentionIQ — Customer Value, RFM Segmentation and Churn Risk Analytics</h2>h2>  <h3>Turn retail transactions into smarter customer-retention decisions.</h3>
+  <h2>RetentionIQ — Customer Value, RFM Segmentation and Churn Risk Analytics</h2> <h3>Turn retail transactions into smarter customer-retention decisions.</h3>
   <p>End-to-end data cleaning, customer segmentation, revenue analysis, and interactive business intelligence.</p>  <p>
     <img src="https://img.shields.io/badge/SQL_Server-Data_Cleaning-CC2927?style=for-the-badge" alt="SQL Server" />
     <img src="https://img.shields.io/badge/Python-RFM_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
