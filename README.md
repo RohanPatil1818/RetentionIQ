@@ -1,5 +1,6 @@
 
-<div align="center"> <h2>RetentionIQ — Customer Value, RFM Segmentation and Churn Risk Analytics</h2> <h3>Turn retail transactions into smarter customer-retention decisions.</h3> <p>End-to-end data cleaning, customer segmentation, revenue analysis, and interactive business intelligence.</p> <p> <img src="https://img.shields.io/badge/SQL_Server-Data_Cleaning-CC2927?style=for-the-badge" alt="SQL Server" /> <img src="https://img.shields.io/badge/Python-RFM_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Power_BI-Interactive_Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=111111" alt="Power BI" /> <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" /> </p> <p> <a href="#-dashboard-gallery">📸 Dashboard</a> &nbsp;•&nbsp; <a href="#-business-findings">💡 Findings</a> &nbsp;•&nbsp; <a href="#-analytical-workflow">⚙️ Workflow</a> &nbsp;•&nbsp; <a href="#-how-to-run">🚀 Run locally</a> </p> </div>
+
+<div align="center"> <h2>RetentionIQ — Customer Value, RFM Segmentation and Churn Risk Analytics</h2> <h3>Turn retail transactions into smarter customer-retention decisions.</h3> <p>End-to-end data cleaning, customer segmentation, revenue analysis, and interactive business intelligence.</p> <p> <img src="https://img.shields.io/badge/SQL_Server-Data_Cleaning-CC2927?style=for-the-badge" alt="SQL Server" /> <img src="https://img.shields.io/badge/Python-RFM_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Power_BI-Interactive_Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=111111" alt="Power BI" /> <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" /> </p> <p> <a href="#-dashboard-gallery">📸 Dashboard</a> &nbsp;•&nbsp; <a href="#-data-resources">📂 Data resources</a> &nbsp;•&nbsp; <a href="#-business-findings">💡 Findings</a> &nbsp;•&nbsp; <a href="#-analytical-workflow">⚙️ Workflow</a> &nbsp;•&nbsp; <a href="#-how-to-run">🚀 Run locally</a> </p> </div>
 📌 Project at a glance
 <table> <tr> <td align="center" width="25%"><b>5,881</b><br /><sub>Unique customers</sub></td> <td align="center" width="25%"><b>£17.37M</b><br /><sub>Historical sales</sub></td> <td align="center" width="25%"><b>50.86%</b><br /><sub>90-day inactivity rate</sub></td> <td align="center" width="25%"><b>779,495</b><br /><sub>Analyzed line items</sub></td> </tr> </table>
 The business challenge: Which customers are driving revenue, which have become inactive, and where should a retailer focus its retention efforts?
@@ -7,6 +8,13 @@ The business challenge: Which customers are driving revenue, which have become i
 My solution: Build a customer-level RFM model and a three-page Power BI experience, connecting transactional data quality to actionable retention segments.
 
 Industry: UK online giftware / e-commerce retail   |   Time period: Dec 2009 – Dec 2011   |   Dataset: UCI Online Retail II
+
+📂 Data resources
+<div align="center"> <h3>Explore the data behind RetentionIQ</h3> <p>Access the original retail transaction data and the cleaned / processed data used in the analytics workflow. Data files are hosted separately on Google Drive to keep this GitHub repository focused and easy to browse.</p> <a href="https://drive.google.com/drive/u/0/folders/17HZKbKHF5ftXclfRh_wQ3AYxWbDMjBzB"> <img src="https://img.shields.io/badge/Google_Drive-OPEN_DATA_ARCHIVE-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Browse the complete Google Drive data archive" /> </a> </div>
+<table> <tr> <td width="50%" valign="top"> <h3>📦 01 · Raw data</h3> <p>Original retail transaction inputs used for combining yearly sales data, validating records, and performing SQL cleaning.</p> <p><b>Pipeline stage:</b> Data ingestion → SQL preprocessing</p> <a href="https://drive.google.com/drive/folders/1nisvF8YYqwNx_O6tZ7fggUxK0c6KeZ1s"><b>📁 View raw data folder</b></a> </td> <td width="50%" valign="top"> <h3>🧹 02 · Cleaned &amp; processed data</h3> <p>Data resources for the downstream Python RFM segmentation and Power BI customer analytics workflow.</p> <p><b>Pipeline stage:</b> Cleaned transactions → RFM analysis → Dashboard</p> <a href="https://drive.google.com/drive/folders/1KvJcsx-pL5oIAxyHJHL946zu18rsi5UJ"><b>📁 View processed data folder</b></a> </td> </tr> </table>
+Original public dataset: UCI Machine Learning Repository — Online Retail II · Project archive: Browse all data resources on Google Drive
+
+Access: For visitors to open these resources from a public GitHub README, set the Drive folder permissions to Anyone with the link → Viewer. The supplied intermediate CSV had incomplete invoice timestamps; regenerate it from SQL with full dates before rerunning the notebook.
 
 📸 Dashboard gallery
 Actual Power BI dashboard screenshots — click any image to view it at full size on GitHub.
@@ -40,7 +48,6 @@ Win back	At Risk + inactive Loyal	Personalized reactivation campaign with an unt
 Build habits	New	Timely second-purchase prompts	Second-purchase conversion rate
 Control spending	Lost / Need Attension	Low-cost reactivation tests; suppress persistent nonresponders	Cost per incremental reactivation
 Profitability check: Incremental contribution = incremental orders × contribution margin per order − incentive cost − campaign/servicing cost
-
 
 ⚙️ Analytical workflow
 1 · SQL Server — clean and validate
@@ -78,7 +85,7 @@ Feature engineering	Python, pandas, NumPy, Jupyter	Recency, frequency, monetary 
 Business intelligence	Power BI	KPI cards, slicers, trend and segment visualizations
 Data exchange	CSV / Excel	Transfer cleaned output to the BI model
 🚀 How to run
-Prerequisites: Python 3.x, Microsoft SQL Server/SSMS, Power BI Desktop, and the UCI Online Retail II dataset.
+Prerequisites: Python 3.x, Microsoft SQL Server/SSMS, Power BI Desktop, and the UCI Online Retail II dataset. You can also browse the project's Google Drive data archive.
 
 Prepare SQL inputs. Import both source periods to SQL Server with the columns expected by `sql/Data-Cleaning-BySql.sql`. Run the SQL sections in order, validating quality checks and the dbo.RetailCleaned result.
 
