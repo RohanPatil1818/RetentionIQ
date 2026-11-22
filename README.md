@@ -28,7 +28,7 @@ Industry: UK online giftware / e-commerce retail   |   Time period: Dec 2009 �
 All three images below are from the actual Power BI dashboard, not generated mock-ups.
 01 · Customer Insights — Executive landing page
 <p align="center">
-  <img src="[assets/dashboard_overview.png" alt="Customer Insights Power BI dashboard with four KPIs and navigation](https://github.com/RohanPatil1818/RetentionIQ/blob/main/Screenshot%201.png)" width="100%" />
+  <img src="(https://github.com/RohanPatil1818/RetentionIQ/blob/main/Screenshot%201.png)" width="100%" />
 </p>
 <p align="center"><sub>Executive KPI summary, report navigation and plain-English definitions of churn, recency, frequency and customer value.</sub></p>02 · Business Overview   /   03 · RFM Analysis
 <table>
