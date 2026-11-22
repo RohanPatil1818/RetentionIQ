@@ -41,8 +41,6 @@ Build habits	New	Timely second-purchase prompts	Second-purchase conversion rate
 Control spending	Lost / Need Attension	Low-cost reactivation tests; suppress persistent nonresponders	Cost per incremental reactivation
 Profitability check: Incremental contribution = incremental orders × contribution margin per order − incentive cost − campaign/servicing cost
 
-Realized profit uplift: [Insert Exact Metric] · Campaign cost: [Insert Exact Metric] · Contribution margin: [Insert Exact Metric].
-These inputs were not provided; no unmeasured ROI or revenue savings are claimed.
 
 ⚙️ Analytical workflow
 1 · SQL Server — clean and validate
@@ -111,9 +109,5 @@ Correct report currency formatting to GBP.
 Add true rolling monthly / cohort-based churn metrics.
 Test segment-specific retention interventions with holdout groups.
 Evaluate an optional predictive churn classifier on time-separated data.
-<div align="center"> <h3>From historical transactions → meaningful customer segments → measurable retention decisions</h3> <sub>Data attribution: Chen, D. (2012), <a href="https://archive.ics.uci.edu/dataset/502/online+retail+ii">Online Retail II</a>, UCI Machine Learning Repository · <a href="https://doi.org/10.24432/C5CG6D">DOI: 10.24432/C5CG6D</a></sub> </div>
+<div align="center"> <h3>From historical transactions → meaningful customer segments → measurable retention decisions</h3> </div>
 
-
-
-
-£0
